@@ -1,0 +1,4 @@
+Reporte de Ganancias:
+Ventas Totales: $55.00
+Descuento (10%): $5.50
+Ganancias Netas: $49.50

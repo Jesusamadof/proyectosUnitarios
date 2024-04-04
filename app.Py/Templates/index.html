@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ventas</title>
+</head>
+<body>
+    <h1>Calculadora de Ventas</h1>
+    <form method="POST">
+        <label for="ventas">Ingrese el monto de las ventas totales:</label>
+        <input type="number" name="ventas" id="ventas" required>
+        <button type="submit">Calcular</button>
+    </form>
+    {% if ventas %}
+    <h2>Reporte de Ganancias:</h2>
+    <p>Ventas Totales: ${{ventas}}</p>
+    <p>Descuento (10%): ${{descuento}}</p>
+    <p>Ganancias Netas: ${{ganancias}}</p>
+    <img src="data:image/png;base64,{{grafico}}" alt="Gráfico de Ventas">
+    {% endif %}
+</body>
+</html>
